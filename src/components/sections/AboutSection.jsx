@@ -6,14 +6,14 @@ const AboutSection = () => {
     <section id="about" className="aira-section bg-[#0a0f18] w-full">
       <div className="container mx-auto px-6">
         {/* Experience Badge */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-8 md:mb-12">
           <div className="bg-gradient-to-r from-brand-500 to-brand-600 px-8 py-4 rounded-2xl shadow-2xl shadow-brand-500/20">
             <span className="text-3xl md:text-4xl font-bold text-slate-900 font-display">10+ Years</span>
             <span className="text-slate-900 text-lg ml-3 font-semibold">of Excellence in Lab Infrastructure</span>
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center mb-20">
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-20">
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-6 text-slate-100 italic">Why <span className="text-brand-500 underline decoration-brand-500/30 underline-offset-8">Aira</span> Before The Rest?</h2>
           <p className="text-slate-400 text-lg md:text-xl font-light">Aira Lab Equipment handles everything from site measurements and layout proposals to fabrication and installation. We serve <span className="text-brand-400 font-semibold">Pharmaceuticals</span>, <span className="text-brand-400 font-semibold">Schools & Colleges</span>, <span className="text-brand-400 font-semibold">Hospitals</span>, and more.</p>
         </div>

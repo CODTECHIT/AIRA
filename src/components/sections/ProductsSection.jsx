@@ -14,13 +14,14 @@ const ProductsSection = () => {
   return (
     <section id="products" className="aira-section relative overflow-hidden bg-slate-950/20">
       <div className="container mx-auto px-6">
-        <header className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-          <div className="max-w-2xl text-left">
-            <span className="text-brand-500 font-bold text-xs uppercase tracking-widest block mb-4">Our Range</span>
-            <h2 className="text-3xl md:text-5xl font-bold font-display text-slate-100">Expert Products <br />For Your Laboratory</h2>
+        <header className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-6">
+          <div className="max-w-3xl text-left">
+            <span className="text-brand-500 font-bold text-xs uppercase tracking-[0.3em] block mb-4">Our Range</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-slate-100 leading-tight">Expert Products <br />For Your Laboratory</h2>
           </div>
-          <p className="text-slate-400 max-w-sm mb-2 font-light italic text-left">Every design in our C1 Line is optimized for safety, durability, and cGMP compliance.</p>
+          <p className="text-slate-400 max-w-sm mb-2 font-light italic text-left border-l border-brand-500/30 pl-4">Every design in our C1 Line is optimized for safety, durability, and cGMP compliance.</p>
         </header>
+
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {PRODUCT_CATEGORIES.map((product, index) => (

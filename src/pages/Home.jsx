@@ -108,49 +108,50 @@ const Home = () => {
     <div className="min-h-screen">
       <HeroSection />
       
-      {/* Video Section */}
-      <section className="aira-section bg-[#0a0f18] py-16">
+      {/* Videos Section */}
+      <section className="aira-section bg-[#0a0f18]">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <FadeIn>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-                <div className="aspect-video">
-                  <iframe 
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/jcjCZUqD7Po"
-                    title="Aira Lab Equipment - Manufacturing Facility"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+          <div className="text-center mb-12 md:mb-20">
+            <h2 className="text-3xl md:text-5xl font-bold font-display text-slate-100 mb-4">Precision At Work</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">Experience the quality, scale, and craftsmanship of our manufacturing process.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+            <FadeIn direction="left">
+              <div className="space-y-4">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+                  <div className="aspect-video">
+                    <iframe 
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/jcjCZUqD7Po"
+                      title="Manufacturing Facility"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
                 </div>
+                <h3 className="text-xl font-bold text-slate-200">Our Facility</h3>
+              </div>
+            </FadeIn>
+
+            <FadeIn direction="right" delay={0.2}>
+              <div className="space-y-4">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+                  <div className="aspect-video">
+                    <iframe 
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/j0e6n-6XpEs"
+                      title="Working Process"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-slate-200">Working Process</h3>
               </div>
             </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* Shorts Video Section */}
-      <section className="aira-section bg-[#0a0f18] py-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <FadeIn>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-                <div className="aspect-video">
-                  <iframe 
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/j0e6n-6XpEs"
-                    title="Aira Lab Equipment - Shorts"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
       
       <AboutSection />
       <ProductsSection />
