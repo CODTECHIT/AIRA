@@ -42,6 +42,16 @@ const PROJECTS = [
     title: "Modern Lab Infrastructure",
     category: "Turnkey",
     image: "/8.jpeg"
+  },
+  {
+    title: "Laboratory Installation",
+    category: "Setup",
+    image: "/9.jpeg"
+  },
+  {
+    title: "Custom Lab Design",
+    category: "Engineering",
+    image: "/10.jpeg"
   }
 ];
 
