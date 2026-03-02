@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import Process from "./pages/Process";
 import Contact from "./pages/Contact";
+import Work from "./pages/Work";
 
 // Helper to scroll to top on page change
 const ScrollToTop = () => {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/process" element={<Process />} />
+            <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

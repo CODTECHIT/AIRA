@@ -12,6 +12,12 @@ export const PRODUCT_CATEGORIES = [
         bullets: ["High-flow air tech", "Aerodynamic sash", "Service outlet integration"]
     },
     {
+        name: "Fumehood",
+        description: "Advanced containment solutions for safe chemical handling and fumes extraction.",
+        image: "/Fumehood.png",
+        bullets: ["High efficiency airflow", "Digital monitoring", "Energy-saving fans"]
+    },
+    {
         name: "Material Storage Solutions",
         description: "Heavy-duty C1 Line storage systems for raw materials and chemical reagents.",
         image: "/Material Storage Solutions.png",
