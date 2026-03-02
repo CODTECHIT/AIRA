@@ -13,9 +13,21 @@ const Navbar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleLogoClick = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  const handleLogoClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    setIsOpen(false);
   };
+
+
+
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    setIsOpen(false);
+  };
+
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#0a0f18]/95 backdrop-blur-xl border-b border-white/10 py-2 md:py-3 px-4 md:px-12 flex justify-between items-center">
@@ -29,6 +41,7 @@ const Navbar = () => {
           <Link 
             key={item.id} 
             to={item.id} 
+            onClick={handleNavClick}
             className={`hover:text-brand-400 transition-all duration-300 uppercase relative ${location.pathname === item.id ? 'text-brand-500' : 'text-slate-200'}`}
           >
             {item.label}
@@ -59,7 +72,7 @@ const Navbar = () => {
               <Link 
                 key={item.id} 
                 to={item.id} 
-                onClick={() => setIsOpen(false)}
+                onClick={handleNavClick}
                 className={`py-2 px-4 rounded-lg hover:bg-white/5 transition-colors uppercase ${location.pathname === item.id ? 'text-brand-500 bg-white/5' : 'text-slate-200'}`}
               >
                 {item.label}

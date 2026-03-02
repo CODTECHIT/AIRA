@@ -26,7 +26,7 @@ export const PRODUCT_CATEGORIES = [
     {
         name: "Apron & Locker Units",
         description: "Modern change-room solutions from our C1 infrastructure range.",
-        image: "/Pharma Lab Furniture.png",
+        image: "/Apron & Locker Units.png",
         bullets: ["Personal lockers", "Apron hanging units", "Cross-over benches"]
     },
     {
@@ -38,13 +38,13 @@ export const PRODUCT_CATEGORIES = [
     {
         name: "School & College Labs",
         description: "Affordable and durable lab furniture for educational institutions.",
-        image: "/Pharma Lab Furniture.png",
+        image: "/School & College Labs.png",
         bullets: ["Student workbenches", "Teacher demonstration tables", "Storage cabinets"]
     },
     {
         name: "Hospital Furniture",
         description: "Medical-grade lab and storage solutions for healthcare facilities.",
-        image: "/Industrial Fume Hoods.png",
+        image: "/Hospital Furniture.png",
         bullets: ["SS 304/316 grade", "Hospital storage cabinets", "Examination tables"]
     }
 ];
