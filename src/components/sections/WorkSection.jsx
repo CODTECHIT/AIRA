@@ -52,18 +52,33 @@ const WorkSection = ({ showTitle = true, limit = null }) => {
     <section id="work" className="relative bg-[#0a0f18] overflow-hidden">
       <div className="container mx-auto px-6">
         {showTitle && (
-          <header className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 pt-10">
-            <div className="max-w-2xl text-left border-l-4 border-brand-500 pl-6">
-              <span className="text-brand-500 font-bold text-xs uppercase tracking-[0.3em] block mb-4 underline decoration-brand-500/20 underline-offset-8">Featured Projects</span>
-              <h2 className="text-4xl md:text-6xl font-bold font-display text-slate-100">Excellence In <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600">Every Detail</span></h2>
+          <header className={`flex flex-col md:flex-row justify-between items-start md:items-end gap-6 pt-12 ${limit ? 'mb-10' : 'mb-16'}`}>
+            <div className="max-w-3xl text-left relative pl-6">
+              {/* Vertical Accent Bar */}
+              <div className="absolute left-0 top-1 bottom-1 w-1 bg-brand-500 rounded-full" />
+              
+              <span className="text-brand-500 font-bold text-[10px] md:text-xs uppercase tracking-[0.4em] block mb-3 opacity-90">
+                Featured Projects
+              </span>
+              
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-slate-100 leading-[1.1]">
+                Excellence In <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600 drop-shadow-brand">
+                  Every Detail
+                </span>
+              </h2>
             </div>
+            
             {!limit && (
-              <div className="hidden md:block">
-                <p className="text-slate-400 max-w-xs text-sm italic font-light">Showcasing our precision engineering in top-tier pharmaceutical and research facilities across India.</p>
+              <div className="md:max-w-xs border-l border-white/10 pl-6 md:pl-0 md:border-l-0">
+                <p className="text-slate-400 text-sm italic font-light leading-relaxed">
+                  Showcasing our precision engineering in top-tier pharmaceutical and research facilities across India.
+                </p>
               </div>
             )}
           </header>
         )}
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {displayedProjects.map((project, index) => (
