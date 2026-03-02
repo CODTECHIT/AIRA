@@ -106,6 +106,29 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      
+      {/* Video Section */}
+      <section className="aira-section bg-[#0a0f18] py-16">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <FadeIn>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                <div className="aspect-video">
+                  <iframe 
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/jcjCZUqD7Po"
+                    title="Aira Lab Equipment - Manufacturing Facility"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+      
       <AboutSection />
       <ProductsSection />
       <FounderSection />
