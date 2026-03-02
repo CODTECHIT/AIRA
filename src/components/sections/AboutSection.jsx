@@ -15,7 +15,7 @@ const AboutSection = () => {
 
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-6 text-slate-100 italic">Why <span className="text-brand-500 underline decoration-brand-500/30 underline-offset-8">Aira</span> Before The Rest?</h2>
-          <p className="text-slate-400 text-lg md:text-xl font-light">Aira Lab Equipment handles everything from site measurements and layout proposals to fabrication and installation.</p>
+          <p className="text-slate-400 text-lg md:text-xl font-light">Aira Lab Equipment handles everything from site measurements and layout proposals to fabrication and installation. We serve <span className="text-brand-400 font-semibold">Pharmaceuticals</span>, <span className="text-brand-400 font-semibold">Schools & Colleges</span>, <span className="text-brand-400 font-semibold">Hospitals</span>, and more.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

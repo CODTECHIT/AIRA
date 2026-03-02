@@ -9,7 +9,8 @@ const FounderSection = () => {
           <div className="max-w-4xl mx-auto">
             <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 border border-white/10">
               <img 
-                src="/WhatsApp Image 2026-03-02 at 9.19.13 AM.jpeg" 
+                src="/founder.jpeg" 
+                loading="lazy"
                 alt="C. Ramesh - Founder" 
                 className="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover border-4 border-brand-500/30"
               />

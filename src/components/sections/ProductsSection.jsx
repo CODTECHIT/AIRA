@@ -27,7 +27,12 @@ const ProductsSection = () => {
             <FadeIn key={product.name} delay={index * 0.1} className="h-full">
               <div className="group relative rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-500 bg-slate-900 border border-white/5 h-full">
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img src={product.image} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={product.name} />
+                  <img 
+                    src={product.image} 
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                    alt={product.name} 
+                  />
                 </div>
                 <div className="p-8 text-left">
                   <h3 className="text-2xl font-bold mb-3 font-display text-slate-100">{product.name}</h3>
