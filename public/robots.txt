@@ -1,0 +1,16 @@
+# Robots.txt for Aira Lab Equipment
+# https://www.airalabequipment.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.airalabequipment.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
+
+# Block common non-content paths
+Disallow: /api/
+Disallow: /assets/
+Disallow: /src/

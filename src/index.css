@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #f97316;
+  --bg-dark: #020617;
+  --bg-card: #ffffff;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0f18;
+  @apply text-slate-100 antialiased font-sans;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Outfit, Inter, system-ui, sans-serif;
+  @apply tracking-tight;
+}
+
+.font-display {
+  font-family: Outfit, Inter, system-ui, sans-serif;
+}
+
+.aira-section {
+  @apply py-12 md:py-24 lg:py-32;
+}
+
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.premium-card {
+  @apply bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-premium hover:shadow-2xl transition-all duration-300;
+}
+
+.orange-glow {
+  @apply relative;
+}
+
+.drop-shadow-brand {
+  filter: drop-shadow(0 0 20px rgba(249, 115, 22, 0.4));
+}
+
+.orange-glow::after {
+  content: '';
+  @apply absolute -inset-1 bg-brand-500 blur-xl opacity-20 -z-10 rounded-full;
+}
