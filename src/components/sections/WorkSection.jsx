@@ -11,44 +11,25 @@ const PROJECTS = [
   {
     title: "R&D Research Station",
     category: "Research",
-<<<<<<< HEAD
     image: "/bench.png"
   },
   {
     title: "Strong Aptron Cabinet",
-=======
-    image: "/2.jpeg"
-  },
-  {
-    title: "Instrument Lab Setup",
->>>>>>> 8f593df8ea281f28f9bdc3fc46d321c621a1963f
     category: "Analysis",
     image: "/3.jpeg"
   },
   {
-<<<<<<< HEAD
     title: "Open racks",
-=======
-    title: "Chemistry Analysis Lab",
->>>>>>> 8f593df8ea281f28f9bdc3fc46d321c621a1963f
     category: "Industrial",
     image: "/4.jpeg"
   },
   {
-<<<<<<< HEAD
     title: "Fumehood",
-=======
-    title: "Cleanroom Furniture",
->>>>>>> 8f593df8ea281f28f9bdc3fc46d321c621a1963f
     category: "Pharma",
     image: "/5.jpeg"
   },
   {
-<<<<<<< HEAD
     title: " conference table",
-=======
-    title: "Advanced Fumehoods",
->>>>>>> 8f593df8ea281f28f9bdc3fc46d321c621a1963f
     category: "Safety Systems",
     image: "/6.jpeg"
   },
@@ -58,11 +39,7 @@ const PROJECTS = [
     image: "/7.jpeg"
   },
   {
-<<<<<<< HEAD
     title: "Modern school Infrastructure",
-=======
-    title: "Modern Lab Infrastructure",
->>>>>>> 8f593df8ea281f28f9bdc3fc46d321c621a1963f
     category: "Turnkey",
     image: "/8.jpeg"
   },
