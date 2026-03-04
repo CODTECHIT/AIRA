@@ -33,7 +33,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#0a0f18]/95 backdrop-blur-xl border-b border-white/10 py-2 md:py-3 px-4 md:px-12 flex justify-between items-center">
       <Link to="/" onClick={handleLogoClick} className="flex items-center gap-3">
+<<<<<<< HEAD
         <img src="/logo_small.webp" alt="Aira Lab Equipment" className="h-10 md:h-14 w-auto" />
+=======
+        <img src="/logo.png" alt="Aira Lab Equipment" className="h-10 md:h-14 w-auto" />
+>>>>>>> 8f593df8ea281f28f9bdc3fc46d321c621a1963f
       </Link>
       
       {/* Desktop Navigation */}
